@@ -19,8 +19,7 @@ public class SplashActivity extends Activity {
             public void run() {
                 Intent intent=new Intent(SplashActivity.this,MainActivity.class);
                 startActivity(intent);
-                */
-                // Start home activity WITHOUT DELAY
+                */ //Start home activity WITHOUT DELAY
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 // close splash activity
                 finish();
