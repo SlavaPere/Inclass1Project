@@ -10,6 +10,7 @@ public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /* WITH DELAY
         setContentView(R.layout.splashscreen);
 
         handler=new Handler();
@@ -18,9 +19,14 @@ public class SplashActivity extends Activity {
             public void run() {
                 Intent intent=new Intent(SplashActivity.this,MainActivity.class);
                 startActivity(intent);
+                */
+                // Start home activity WITHOUT DELAY
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                // close splash activity
                 finish();
+                /*
             }
         },3000);
-
+*/
     }
 }
